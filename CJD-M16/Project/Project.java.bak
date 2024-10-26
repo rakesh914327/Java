@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class Project
+{
+	public static void main(String[] args){
+		Scanner obj=new Scanner(System.in);
+		System.out.print("Enter The Number For Operand 1 : ");
+		Double op1 = obj.nextDouble();
+		System.out.print("Enter The Operator to perform Operation: ");
+		char operator=obj.next().charAt(0);
+		System.out.print("Enter The Number For Operand 2 : ");
+		Double op2 = obj.nextDouble();
+
+		switch(operator){
+			case '+':
+				Add(op1,op2)
+			break;
+			case '-':
+				Sub(op1,op2);
+			break;
+			case '*':
+				Mul(op1,op2)
+			break;
+			case '/':
+				Div(op1,op2)
+			break;
+			case '%':
+				Mod(op1,op2)
+			break;
+		}
+
+	}
+	public static void Add(Double a, Double b){
+		System.out.println(" Value Of " +a +" + "+b+" = "+ (a+b));
+	}
+	public static void Sub(Double a, Double b){
+		System.out.println(" Value Of " +a +" + "+b+" = "+ (a-b));
+	}
+	public static void Mul(Double a, Double b){
+		System.out.println(" Value Of " +a +" + "+b+" = "+ (a*b));
+	}
+	public static void Div(Double a, Double b){
+		System.out.println(" Value Of " +a +" + "+b+" = "+ (a/b));
+	}
+	public static void Mod(Double a, Double b){
+		System.out.println(" Value Of " +a +" + "+b+" = "+ (a%b));
+	}
+
+}
